@@ -1,0 +1,130 @@
+.container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.img-logo {
+    padding: 0.5em;
+    margin-left: 1.2em;
+    height: auto;
+    width: 94px;
+}
+
+.navbar-mobile-menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-container {
+    padding: 2em;
+}
+
+.burger-nav {
+    position: relative;
+    display: inline-block;
+    width: 2.8em;
+    height: 1.3em;
+    border-top: 0.2em solid $green;
+    border-bottom: 0.2em solid $green;
+}
+
+.burger-nav:before {
+    content: "";
+    position: absolute;
+    top: 0.35em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid $green;
+}
+
+.navbar-nav {
+    display: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: "Lato", "regular";
+    margin: 0;
+    line-height: 2em;
+    letter-spacing: 0.3em;
+    padding: 1em;
+    text-align: center;
+    background-color: $white;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        padding: 1em;
+        margin: 0 1em;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3em;
+        font-size: 0.8em;
+        &.mobile {
+            display: none;
+        }
+    }
+    .navbar-mobile-menu {
+        display: none;
+    }
+    .img-logo {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-item:hover {
+        cursor: pointer;
+        color: $green;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        font-size: 1.2vw;
+        margin: 0;
+        &.navbar-item {
+            width: 3000px;
+        }
+    }
+    .img-logo {
+        height: auto;
+        width: 94px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        font-size: 1vw;
+        &.navbar-item {
+            width: 3000px;
+        }
+    }
+    .navbar-bg {
+        height: 100%;
+    }
+    .img-logo {
+        height: auto;
+        width: 170px;
+        margin: 15px 0;
+    }
+}

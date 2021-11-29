@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../scss/style.css" />
+    <script src="/javascript/functions.js"></script>
+    <title>Example 3</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="navbar-mobile-menu">
+            <div class="navbar-logo">
+                <img class="img-logo" src="../assets/logo.png " alt="logo " />
+            </div>
+            <div class="burger-container">
+                <span class="burger-nav" onclick="toggleNavbar() "></span>
+            </div>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="navbar-item">About us</li>
+            <li>.</li>
+            <li class="navbar-item">Work</li>
+            <div class="navbar-logo large-logo">
+                <img class="img-logo" src="../assets/logo.png " alt="logo " />
+            </div>
+            <li class="navbar-item">Shop</li>
+            <li>.</li>
+            <li class="navbar-item">Contact</li>
+        </ul>
+
+        <ul class="navbar-nav mobile" id="menu">
+            <li class="navbar-item">About us</li>
+
+            <li class="navbar-item">Work</li>
+
+            <li class="navbar-item">Shop</li>
+
+            <li class="navbar-item">Contact</li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <img class="navbar-bg" src="/assets/bg.png" srcset="
+          /assets/bg.png        480w,
+          /assets/bg-medium.png 768w,
+          /assets/bg-large.png
+        " sizes="(max-width: 480px) 480px, (min-width: 1024px) 1024px" alt="hero background" />
+    </section>
+
+    <div class="subscribe-block">
+        <div class="subscribe-block-img">
+            <img src="/assets/Logo.png" alt="logo" />
+        </div>
+        <p>Stay on the saddle!</p>
+        <div class="subscribe-block-form">
+            <input placeholder="enter your email..." />
+            <button>GO</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="social-container">
+            <img src="/assets/twitter.png " alt="twitter " />
+            <img src="/assets/facebook.png " alt="facebook " />
+            <img src="/assets/pinterest.png " alt="pinterest " />
+        </div>
+        <div class="contact-container">
+            <p><strong>AOD New York</strong></p>
+            <p>2250 Lexington Avenue</p>
+            <p>New York, NY 10035 - info@domain.com</p>
+        </div>
+        <div class="contact-subcontainer">
+            <p>Handcrafted by</p>
+
+            <img src="/assets/yebo.png " alt="yebo " />
+        </div>
+    </footer>
+</body>
+
+</html>

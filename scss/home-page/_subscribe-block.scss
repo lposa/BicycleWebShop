@@ -1,0 +1,88 @@
+.subscribe-block {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    p {
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: normal;
+        font-style: italic;
+        color: $font-gray;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 1.5em;
+        p {
+            font-size: 1.5em;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 1.5em 0;
+    }
+}
+
+.subscribe-block-img img {
+    width: 125px;
+    margin-bottom: 10px;
+    @media screen and(min-width: 768px) {
+        margin-bottom: 5px;
+        width: 100px;
+    }
+}
+
+.subscribe-block-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+    input {
+        border: 1px solid gainsboro;
+        padding: 1.25em 0.55em;
+        font-size: 1.75em;
+        margin-top: 25px;
+        &::placeholder {
+            color: $footer-font;
+        }
+    }
+    button {
+        display: block;
+        border: none;
+        background-color: $green;
+        color: $white;
+        padding: 1em 0;
+        font-size: 2.2em;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 70% 30%;
+        justify-content: center;
+        font-size: 0.75em;
+        margin-top: 20px;
+        input,
+        button {
+            padding: 0.75em 1.75em;
+            margin: 10px;
+        }
+        input {
+            width: 80%;
+            justify-self: end;
+        }
+        button {
+            justify-self: start;
+            margin-left: 0;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        grid-template-columns: auto auto;
+        input {
+            width: 100%;
+        }
+    }
+}

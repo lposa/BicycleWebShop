@@ -1,0 +1,109 @@
+.footer {
+    position: relative;
+    background-color: $cream;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: $footer-font;
+}
+
+.social-container {
+    display: flex;
+    column-gap: 1.5em;
+    padding: 1em;
+    img {
+        width: 50px;
+    }
+}
+
+.contact-container {
+    text-align: center;
+    line-height: 0;
+    padding: 1em;
+}
+
+.contact-container:first-child {
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+.contact-subcontainer {
+    display: flex;
+    padding: 1em;
+    column-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.286;
+    img {
+        width: 75px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        height: auto;
+        justify-content: space-between;
+    }
+    .social-container {
+        grid-column: 2;
+        justify-content: center;
+    }
+    .contact-container {
+        grid-column: 1;
+        display: block;
+        text-align: left;
+        line-height: 0.2;
+        font-size: 0.75em;
+    }
+    .contact-subcontainer {
+        display: flex;
+        font-size: 0.75em;
+        grid-column: 3;
+        margin: 0 1em;
+        column-gap: 1em;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        bottom: 0;
+        grid-auto-flow: column;
+        font-size: 1vw;
+    }
+    .social-container {
+        grid-column: 2;
+        justify-content: center;
+        img {
+            width: 35px;
+        }
+    }
+    .contact-subcontainer {
+        img {
+            width: 55px;
+            height: 36px;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .social-container {
+        img {
+            width: 60px;
+        }
+    }
+    .contact-subcontainer {
+        img {
+            width: 55px;
+            height: 36px;
+        }
+    }
+}
