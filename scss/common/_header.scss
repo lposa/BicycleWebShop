@@ -9,7 +9,7 @@
     padding: 0.5em;
     margin-left: 1.2em;
     height: auto;
-    width: 94px;
+    width: 64px;
 }
 
 .navbar-mobile-menu {
@@ -29,8 +29,8 @@
 .burger-nav {
     position: relative;
     display: inline-block;
-    width: 2.8em;
-    height: 1.3em;
+    width: 2em;
+    height: 1.1em;
     border-top: 0.2em solid $green;
     border-bottom: 0.2em solid $green;
 }
@@ -38,7 +38,7 @@
 .burger-nav:before {
     content: "";
     position: absolute;
-    top: 0.35em;
+    top: 0.25em;
     left: 0px;
     width: 100%;
     border-top: 0.2em solid $green;
