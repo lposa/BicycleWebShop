@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../scss/style.css" />
-    <script src="../javascript/functions.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <title>Example 3</title>
 </head>
 
@@ -15,7 +18,7 @@
     <header class="container">
         <div class="navbar-mobile-menu">
             <div class="navbar-logo">
-                <img class="img-logo" src="../assets/Logo.png " alt="logo " />
+                <img class="img-logo" src="../assets/logo.png " alt="logo " />
             </div>
             <div class="burger-container">
                 <span class="burger-nav" onclick="toggleNavbar() "></span>
@@ -27,7 +30,7 @@
             <li>.</li>
             <li class="navbar-item">Work</li>
             <div class="navbar-logo large-logo">
-                <img class="img-logo" src="../assets/Logo.png " alt="logo " />
+                <img class="img-logo" src="../assets/logo.png " alt="logo " />
             </div>
             <li class="navbar-item">Shop</li>
             <li>.</li>
@@ -46,10 +49,10 @@
     </header>
 
     <section class="hero">
-        <img class="navbar-bg" src="../assets/bg.png" srcset="
-          ../assets/bg.png        480w,
-          ../assets/bg-medium.png 768w,
-          ../assets/bg-large.png
+        <img class="navbar-bg" src="/assets/bg.png" srcset="
+          /assets/bg.png        480w,
+          /assets/bg-medium.png 768w,
+          /assets/bg-large.png
         " sizes="(max-width: 480px) 480px, (min-width: 1024px) 1024px" alt="hero background" />
     </section>
 
@@ -120,22 +123,118 @@
         </div>
     </div>
 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../assets/twitter-logo.png" alt="twitter-logo" />
+                <h3>
+                    AOD New York @aod
+                    <p>35 min</p>
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam culpa facilis asperiores dolorem quisquam quia, quo dolor atque ipsam neque rerum possimus, hic, quibusdam dolore debitis dicta exercitationem sapiente autem!
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/twitter-logo.png" alt="twitter-logo" />
+                <h3>
+                    Leonard Posa @lposa
+                    <p>35 min</p>
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam culpa facilis asperiores dolorem quisquam quia, quo dolor atque ipsam neque rerum possimus, hic, quibusdam dolore debitis dicta exercitationem sapiente autem!
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/twitter-logo.png" alt="twitter-logo" />
+                <h3>
+                    Red Hot Chili Peppers @rhcp
+                    <p>35 min</p>
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam culpa facilis asperiores dolorem quisquam quia, quo dolor atque ipsam neque rerum possimus, hic, quibusdam dolore debitis dicta exercitationem sapiente autem!
+                </p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="store-block">
+        <div class="store-block-mobile">
+            <div class="store-block-item">
+                <img src="../assets/store-seat-big.png" alt="big seat" />
+            </div>
+
+            <div class="store-block-item store-icon-container">
+                <img class="store-background" src="../assets/store-shop-bg.png" alt="store bg" />
+                <div class="bg-overlay"></div>
+                <div class="store-icon">
+                    <img src="../assets/store-icon.png" alt="store icon" />
+                    <p>shop now</p>
+                </div>
+            </div>
+
+            <div class="store-block-item store-button-container">
+                <button>discover the shop</button>
+            </div>
+        </div>
+
+        <div class="store-block-large">
+            <div class="store-block-large-item">
+                <div class="subitem">
+                    <div>
+                        <img class="store-img" src="../assets/store-seat-small.png" alt="small seat" />
+                        <img class="store-img" src="../assets/store-seats-collection.png" alt="seat collection" />
+                    </div>
+                    <img class="store-img" src="../assets/store-seat-big.png" alt="big seat" />
+                </div>
+                <div class="subitem">
+                    <img class="store-img" src="../assets/store-bicycle-left.png" alt="bicycle back brown" />
+                </div>
+            </div>
+            <div class="store-block-large-item">
+                <div class="subitem">
+                    <img class="store-img" src="../assets/store-bicycle-right.png" alt="bicycle back gray" />
+                </div>
+                <div class="subitem">
+                    <div>
+                        <div class="store-block-item store-icon-container">
+                            <img class="store-img" class="store-background" src="../assets/store-shop-bg.png" alt="store bg" />
+                            <div class="bg-overlay"></div>
+                            <div class="store-icon">
+                                <img src="../assets/store-icon.png" alt="store icon" />
+                                <p>shop now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="temp">
+                        <img class="store-img" src="../assets/store-seat-bag.png " alt="seat and bag " />
+                        <img class="store-img" src="../assets/store-bag.png " alt="bag " />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store-block-large-item store-button-container">
+            <button>discover the shop</button>
+        </div>
+    </div>
+
     <div class="subscribe-block">
         <div class="subscribe-block-img">
-            <img src="../assets/Logo.png" alt="logo" />
+            <img src="/assets/Logo.png " alt="logo " />
         </div>
         <p>Stay on the saddle!</p>
         <div class="subscribe-block-form">
-            <input placeholder="enter your email..." />
+            <input placeholder="enter your email... " />
             <button>GO</button>
         </div>
     </div>
 
     <footer class="footer">
         <div class="social-container">
-            <img src="../assets/twitter.png " alt="twitter " />
-            <img src="../assets/facebook.png " alt="facebook " />
-            <img src="../assets/pinterest.png " alt="pinterest " />
+            <img src="/assets/twitter.png " alt="twitter " />
+            <img src="/assets/facebook.png " alt="facebook " />
+            <img src="/assets/pinterest.png " alt="pinterest " />
         </div>
         <div class="contact-container">
             <p><strong>AOD New York</strong></p>
@@ -146,9 +245,11 @@
         <div class="contact-subcontainer">
             <p>Handcrafted by</p>
 
-            <img src="../assets/yebo.png " alt="yebo " />
+            <img src="/assets/yebo.png " alt="yebo " />
         </div>
     </footer>
+
+    <script src="../javascript/functions.js "></script>
 </body>
 
 </html>

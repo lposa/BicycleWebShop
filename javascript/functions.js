@@ -7,3 +7,18 @@ function toggleNavbar() {
         burgerMenu.style.display = "block";
     }
 }
+
+const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    autoplay: {
+        delay: 5000,
+    },
+});
