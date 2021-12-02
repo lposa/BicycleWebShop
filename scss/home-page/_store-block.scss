@@ -1,5 +1,6 @@
 .store-block-large {
     display: none;
+    position: relative;
     width: 100%;
 }
 
@@ -81,6 +82,9 @@
             width: 50%;
         }
     }
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -91,6 +95,7 @@
     .store-block-large-item,
     .subitem {
         display: flex;
+        position: relative;
         max-width: 100%;
     }
     .store-img {
@@ -102,18 +107,20 @@
     .subitem {
         flex-direction: column;
         div {
+            width: 100%;
             display: flex;
         }
+    }
+    //had to do it this way, otherwise img goes out of view
+    #two-img-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
 
 @media screen and(min-width: 1200px) {
     .store-block-large {
         display: grid;
-        width: 100%;
         grid-template-columns: 50% 50%;
-    }
-    #temp {
-        max-width: 100%;
     }
 }
