@@ -1,0 +1,32 @@
+.main-content {
+    padding: 10px;
+    p {
+        line-height: 1.5;
+        color: $font-gray;
+    }
+    img {
+        max-width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.main-content-heading {
+    h1 {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    p {
+        font-size: 24px;
+        color: $font-lightgray;
+        line-height: 1.4;
+    }
+}
+
+#img-caption {
+    text-align: center;
+    border-bottom: 1px solid $font-gray;
+    color: $font-gray;
+    padding: 5px;
+}

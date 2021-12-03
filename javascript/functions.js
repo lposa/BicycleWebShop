@@ -8,17 +8,19 @@ function toggleNavbar() {
     }
 }
 
-const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
+var acc = document.getElementsByClassName("accordion-btn");
+var i;
 
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-    },
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
 
-    autoplay: {
-        delay: 5000,
-    },
-});
+        var panel = this.nextElementSibling;
+
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}

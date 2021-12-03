@@ -1,0 +1,42 @@
+.breadcrumbs-container {
+    position: relative;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+        padding: 1em;
+        margin-left: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 2em;
+    }
+}
+
+.breadcrumbs :nth-child(2) {
+    font-weight: bold;
+}
+
+ul.breadcrumbs {
+    margin: 0;
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumbs li {
+    display: inline;
+    font-size: 18px;
+    color: $font-gray;
+}
+
+ul.breadcrumbs li+li:before {
+    color: $font-gray;
+    content: "/\00a0";
+}
+
+ul.breadcrumbs li a {
+    color: $green;
+    text-decoration: none;
+}
+
+ul.breadcrumbs li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

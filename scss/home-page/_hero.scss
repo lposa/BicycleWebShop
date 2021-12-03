@@ -3,5 +3,28 @@
 }
 
 .navbar-bg {
+    position: relative;
     width: 100%;
+}
+
+.hero-page-name {
+    position: absolute;
+    text-align: center;
+    padding: 1em;
+    z-index: 9999;
+    color: $white;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 7vw;
+    letter-spacing: 7px;
+    @media screen and (min-width: 768px) {
+        font-size: 5vw;
+        margin-bottom: 1em;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 4vw;
+        margin: 0;
+    }
 }

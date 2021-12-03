@@ -1,0 +1,83 @@
+.sidebar-container {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 15px 30px;
+        width: 100%;
+        flex-direction: column-reverse;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+    .sidebar-container {
+        display: block;
+        padding-right: 30px;
+    }
+    .sidebar-text {
+        margin-top: 3em;
+    }
+    .sidebar-container,
+    .sidebar-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        h3 {
+            padding: 0.5em;
+            letter-spacing: 5px;
+            margin-bottom: 0;
+        }
+        p {
+            color: $font-gray;
+        }
+    }
+    .sidebar-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        p {
+            line-height: 2;
+            padding: 0 20px;
+        }
+    }
+    .accordion-btn {
+        position: relative;
+        color: $green;
+        width: 100%;
+        max-height: 100%;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        transition: 0.4s;
+        border: none;
+        border-bottom: 1px solid $green;
+        background-color: $white;
+        &:after {
+            content: "\002B";
+            position: absolute;
+            font-size: 20px;
+            right: 0;
+            padding: 0px 20px;
+        }
+    }
+    .active {
+        &:after {
+            content: "\2212";
+            position: absolute;
+        }
+    }
+    .accordion-text {
+        padding: 0 18px;
+        background-color: $white;
+        display: none;
+        overflow: hidden;
+        text-align: left;
+        line-height: 1.5;
+    }
+}
