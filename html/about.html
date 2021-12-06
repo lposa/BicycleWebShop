@@ -23,7 +23,7 @@
         <ul class="navbar-nav">
             <li class="navbar-item">About us</li>
             <li>.</li>
-            <li class="navbar-item">Work</li>
+            <li class="navbar-item"><a href="work.html">Work</a></li>
             <div class="navbar-logo large-logo">
                 <img class="img-logo" src="../assets/logo.png " alt="logo " />
             </div>
@@ -35,7 +35,7 @@
         <ul class="navbar-nav mobile" id="menu">
             <li class="navbar-item">About us</li>
 
-            <li class="navbar-item">Work</li>
+            <li class="navbar-item"><a href="work.html">Work</a></li>
 
             <li class="navbar-item">Shop</li>
 
@@ -44,18 +44,16 @@
     </header>
 
     <section class="hero">
-        <img class="navbar-bg" src="/assets/about-hero-banner-mobile.png" srcset="
-          /assets/about-hero-banner-mobile.png 480w,
-          /assets/about-hero-banner-tablet.png 768w,
-          /assets/about-hero-banner.png
-        " sizes="(max-width: 480px) 480px, (min-width: 1024px) 1024px" alt="hero background" />
+        <img class="navbar-bg hero-mobile" src="/assets/about-hero-banner-mobile.png" alt="hero background" />
+        <img class="navbar-bg hero-tablet" src="/assets/about-hero-banner-tablet.png" alt="hero background" />
+        <img class="navbar-bg hero-large" src="/assets/about-hero-banner.png" alt="hero background" />
         <h1 class="hero-page-name">ABOUT US</h1>
     </section>
 
     <div class="breadcrumbs-container">
         <ul class="breadcrumbs">
             <li><a href="home.html">Home </a></li>
-            <li>About</li>
+            <li>About us</li>
         </ul>
     </div>
 
@@ -67,7 +65,7 @@
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an uknown printer took a gallery of type.
                 </p>
-                <img src="../assets/about-sidebar-img.png" alt="sidebar img" />
+                <img id="sidebar-img" src="../assets/about-sidebar-img.png" alt="sidebar img" />
             </div>
             <div class="sidebar-accordion">
                 <button class="accordion-btn">Accordion Item</button>

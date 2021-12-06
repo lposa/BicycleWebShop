@@ -7,7 +7,8 @@
 
 .img-logo {
     padding: 0.5em;
-    margin-left: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 0.8em;
     height: auto;
     width: 64px;
 }
@@ -23,16 +24,17 @@
 }
 
 .burger-container {
-    padding: 2em;
+    padding: 1em;
+    margin-bottom: 1.1em;
 }
 
 .burger-nav {
     position: relative;
     display: inline-block;
     width: 2em;
-    height: 1.1em;
-    border-top: 0.2em solid $green;
-    border-bottom: 0.2em solid $green;
+    height: 0.9em;
+    border-top: 0.15em solid $green;
+    border-bottom: 0.15em solid $green;
 }
 
 .burger-nav:before {
@@ -41,7 +43,7 @@
     top: 0.25em;
     left: 0px;
     width: 100%;
-    border-top: 0.2em solid $green;
+    border-top: 0.15em solid $green;
 }
 
 .navbar-nav {

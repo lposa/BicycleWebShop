@@ -8,13 +8,15 @@
 @import "common/header";
 @import "common/footer";
 @import "common/breadcrumbs";
+@import "common/hero";
+@import "common/swiper";
 //***** HOME PAGE *****///
-@import "home-page/hero";
 @import "home-page/subscribe-block";
 @import "home-page/text-block";
 @import "home-page/grid-block";
-@import "home-page/twitter-block";
 @import "home-page/store-block";
 //**** ABOUT PAGE *****///
 @import "about-page/sidebar-content";
 @import "about-page/main-text-content";
+//***** WORK PAGE *****//
+@import "work-page/cta-box";
